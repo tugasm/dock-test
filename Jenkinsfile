@@ -25,7 +25,7 @@ pipeline {
                 // Mengganti 'your-docker-username' dengan username Docker Hub Anda
                 script {
                     docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-                        docker.image("your-docker-username/my-go-app").push()
+                        docker.image("tugasm1998/my-go-app").push()
                     }
                 }
             }
